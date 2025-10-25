@@ -107,5 +107,24 @@ background-clip: text;
  
 }
 
+@media(max-width:568px){
+
+    body{
+        overflow: hidden;
+    }
+.container{
+    width: 15rem;
+    margin-top: -5rem;
+}
+#prompt{
+    font-size: 14px;
+    margin-top: 2rem;
+}
+
+#prompt a{
+    color: white;
+    font-weight: bolder;
+}
+}
 
 
