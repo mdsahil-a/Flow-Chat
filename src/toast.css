@@ -1,0 +1,19 @@
+#toast-container{
+    top:30%;
+    position: absolute;
+    color:rgb(24, 151, 24);
+    background-color:rgb(255, 255, 255);
+    margin-top:15px;
+    font-size:16px;
+    text-align:center;
+    height:18px;
+    width:60%;
+    border:1px solid rgba(22, 5, 5, 0.2);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    padding:5px;
+display: none;
+z-index: 999;
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/loginPage.css">
+    <link rel="stylesheet" href="../toast.css">
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playwrite+AU+QLD:wght@100..400&display=swap');
+</style>
+
+<body>
+    <form action="profilePage.html">
+
+
+<div class="container" >
+<h1>Welcome back,user</h1>
+
+<input type="text" placeholder="Email" id="email">
+<input type="password" placeholder="Password" id="password">
+
+
+<button id="loginButton">Login</button>
+    <p id="toast-container"></p>
+<span id="prompt">Don't have an account?<a href="../../index.html">Sign Up</a></span>
+
+</div>
+
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="../toast.js"></script>
+    <script src="../js/loginPage.js"></script>
+</body>
+</html>

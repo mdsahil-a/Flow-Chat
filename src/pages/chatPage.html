@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="../css/chatPage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <div class="logoutPage hidden">
+<span span="dialogue">Are you sure to logout?</span>
+<div class="logoutButtons">
+  <button id="logoutYes">Yes</button>
+  <button id="logoutNo">No</button>
+</div>
+
+  </div>
+
+
+ <nav class="navBar">
+  <img src="../../public/avatar.jpeg" alt="" id="authorImage">
+<div class="nav-item"  data-page="home"> <i class="fa-solid fa-house"></i> </div>
+<div data-page="chat" class="nav-item chat-icon" onclick="showPeoples()"> <i class="fa-solid fa-comment"></i> </div>
+<div  data-page="notification" class="nav-item"> <i class="fa-solid fa-bell"> </i></div>
+<div  data-page="setting" class="nav-item"> <i class="fa-solid fa-gear"></i> </div>
+<div  data-page="logout" class="nav-item logout"> <i class="fa-solid fa-arrow-right-from-bracket"></i> </div>
+
+</nav> 
+
+
+
+  <div class="wrapper">
+
+<div class="home page" id="home">
+
+<div class="logo">
+  <img src="../../public/logo.png"  id="logoImage" alt="">
+  
+</div>
+
+<div class="introDiv">
+
+
+<div class="about ">
+<h1>Flow chat</h1>
+<span>Connect. Chat. Share.
+Stay close to your friends and communities with fast, real-time messaging — anytime, anywhere. </span>
+
+<div class="buttons">
+  <button>Chat</button>
+  <button>Explore</button>
+</div>
+
+
+</div>
+
+<img src="../../public/message.png" id="messageImage" alt="">
+</div>
+
+
+
+</div>
+
+ 
+<div class="chat page" id="chat">
+
+<div class="userPage page">
+
+<div class="searchSection">
+  
+  <input type="text" placeholder="Search" id="search" >
+<div class="result">
+
+</div>
+
+</div>
+
+
+<div class="friendCard">
+<h1 id="friendHeading">Peoples</h1>
+
+<div class="friendWrapper">
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+<div class="chatBox hide">
+
+
+</div>
+
+</div>
+
+<div class="notification page" id="notification">
+
+<div class="noti_list">
+
+  <div class="noti_card" onclick="deleteNotification('${noti._id}')">
+    <img src="../../public/avatar.jpeg" alt="" id="noti_user">
+    <div class="noti_details">
+      
+      <span id="noti_user">Sahil</span>
+      <span id="noti_message">: Added you</span>
+    </div>
+    <span id="noti_date">7:05am</span>
+</div>
+
+
+  </div>
+
+</div>
+
+  </div>
+ <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../js/chatPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+
+<link rel="stylesheet" href="../css/profilePage.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Playwrite+AU+QLD:wght@100..400&display=swap');
+</style>
+<body>
+
+<div class="wrapper">
+
+<div class="edit_menu hidden">
+    <input type="file" id="fileInput" accept="image/*" >
+    <button id="picUploadButton">Change profilepic  <i class="fa-solid fa-pen"></i></button>
+<input type="text" placeholder="Enter username" id="newUserName">
+
+    <button id="change_button">Change</button>
+</div>
+
+    <!-- image section -->
+<div class="image_div">
+    <img src="../../public/avatar.jpeg" id="currentPic" alt="">
+</div>
+ 
+<!-- Names section -->
+<div class="names ">
+
+    <span id="profileName"></span>
+    
+    <button id="edit">Edit<i class="fa-solid fa-pen"></i></button>
+    <br>
+    <span id="userName"></span>
+
+</div>
+
+<p id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia placeat earum</p>
+
+
+
+<div class="social_act">
+
+    <div class="box">
+        <span id="foll_no" class="num_data">1.2K</span><br>
+        <span id="followers" class="data">Followers</span>
+    </div>
+
+    <div class="box">
+        <span id="follw_no" class="num_data">150</span><br>
+        <span id="following" class="data">Following</span>
+    </div>
+
+    <div class="box">
+        <span id="posts_no" class="num_data">80</span><br>
+        <span id="posts" class="data">Posts</span>
+    </div>
+
+</div>
+<button id="follow_button">Follow</button>
+
+
+
+
+
+
+
+</div>
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/profilePage.js">
+     
+
+
+    </script>
+</body>
+</html>

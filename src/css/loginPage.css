@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Karla", sans-serif;
+}
+
+body{
+   display:flex;
+    justify-content:center;
+    align-items:center;
+height: 100vh;
+    
+background-image: url('../../public/bg2.jpg');
+background-position: center;
+background-size: cover;
+object-fit: cover;
+background-repeat: no-repeat;
+    /* animation:shift 1s ease-in infinite; */
+    
+
+}
+ 
+@keyframes shift{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position:0% 50% ;
+    }
+}
+.container{
+    margin-top:5rem;
+    width:20rem;
+    display:flex;
+    flex-direction:column;
+    padding:44px;
+    justify-content:center;
+    align-items:center;
+
+    border:2px solid rgba(255,255,255,0.1);
+    border-radius:10px;
+    background-color: rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px) ;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.6);
+
+    
+
+    
+}
+h1{
+    font-style:italic;
+    text-align:center;
+    margin-bottom:2rem;
+    justify-content:center;
+  font-family: "Playwrite AU QLD";
+  /* color:rgb(120, 190, 255); */
+background-image: linear-gradient(to right,blue,red);
+background-clip: text;
+-webkit-text-fill-color:transparent;
+  font-size: 30px;
+  text-shadow:0 15px 5px rgb(97, 87, 87);
+
+
+
+}
+.container input{
+    margin:10px auto;
+    font-size: 16px;
+    width:80%;
+    height:2rem;
+    border-radius:22px;
+    padding-left:5px;
+    /* padding:2px; */
+    background-color: rgba(255,255,255,0.1);
+    color:red;
+    outline: none;
+    border:1px solid rgba(0, 0, 0, 0.2)
+}
+#loginButton{
+     width:80%;
+     height:2rem;
+     margin-top:2rem;
+     background: linear-gradient(to right,#4facfe,#00f2fe);
+     cursor: pointer;
+     color:black;
+     border-radius:12px;
+     font-size: 17px;
+     font-weight: bold;
+} 
+#loginButton:hover{
+
+    box-shadow:2px 0 10px #00f2fe;
+
+}
+
+#prompt{
+    font-size:18px;
+    margin-top:15px;
+    color:rgb(0, 0, 0);
+}
+#prompt a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+ 
+}
+
+
+
